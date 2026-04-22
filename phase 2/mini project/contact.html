@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.box {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+button {
+    background: rgb(6, 6, 6);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">Products</a>
+    <a href="contact.html">Contact Us</a>
+</div>
+
+<h1 style="text-align:center;">Contact Us</h1>
+
+<div class="box">
+    <form>
+        <input type="text" placeholder="Your Name" required minlength="3">
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required minlength="5"></textarea>
+        <button>Send</button>
+    </form>
+</div>
+
+</body>
+</html>
