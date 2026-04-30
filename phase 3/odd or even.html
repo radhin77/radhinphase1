@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Learn JS</title>
+    <title>Javascript - Odd or Even</title>
 </head>
 <body>
-    <script>
-        function odd_even(){
-            var a=8;
-            if(a%2==0){
-                document.write("The number is even ");
 
-            }else{
-                document.write("The number is odd");
-            }
+<input type="number" placeholder="Enter number" id="num">
+<button onclick="checkNumber(num.value)">Check</button>
 
+<script>
+    function checkNumber(n) {
+        if (n % 2 == 0) {
+            document.write("It is an even number");
+        } else {
+            document.write("It is an odd number");
         }
-        odd_even()
+    }
+</script>
 
-
-
-
-
-    </script>
 </body>
 </html>
