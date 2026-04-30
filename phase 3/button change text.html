@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript - Button Click</title>
+</head>
+<body>
+
+<h2 id="head2">Javascript</h2>
+<button id="btn">Click</button>
+
+<script>
+    var btn = document.getElementById("btn");
+    var text = document.getElementById("head2");
+
+    btn.addEventListener("click", function()
+    {
+        text.textContent = "Hello Javascript";
+    });
+</script>
+</body>
+</html>
