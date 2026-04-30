@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Learn JS</title>
+<title>Javascript - Change Style</title>
 </head>
 <body>
-    <h1 class="head1">Learn JavaScript</h1>
-    <script>
-        var a=document.getElementsByClassName("head1");
-        console.log(a);
-        a[0].style.color="red";
 
+<h1 id="head1">NEHA NO</h1>
 
-        
+<button onclick="changeStyle()">Click</button>
 
-    </script>
+<script>
+function changeStyle() {
+    var a = document.getElementById("head1");
+    a.style.color = "purple";
+    a.style.backgroundColor = "lightblue";
+}
+</script>
+
 </body>
 </html>
