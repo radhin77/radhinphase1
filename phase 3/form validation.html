@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript - Login Form Validation</title>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form id="loginForm">
+    Username: <input type="text" id="username"><br><br>
+    Password: <input type="password" id="password"><br><br>
+
+    <button type="submit">Login</button>
+</form>
+
+<p id="error"></p>
+
+<script>
+
+    var form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        var error = document.getElementById("error");
+
+        if (username == "" || password == "") {
+            error.textContent = "Fill all forms";
+        }
+
+        else if (username.length < 3) {
+            error.textContent = "Username should contain atleast 3 characters";
+        }
+
+        else if (password.length < 6) {
+            error.textContent = "Password should contain atleast 6 characters";
+        }
+
+        else {
+            error.textContent = "Login Successful";
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
