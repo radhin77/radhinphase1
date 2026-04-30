@@ -11,6 +11,7 @@ function addItem() {
 
     var li = document.createElement("li");
     li.innerText = text;
+
     document.getElementById("list").appendChild(li);
 
     input.value = "";
@@ -32,7 +33,17 @@ function addTask() {
     document.getElementById("msg2").innerText = "";
 
     var li = document.createElement("li");
-    li.innerText = text;
+    li.innerText = text + " ";
+
+    var btn = document.createElement("button");
+    btn.innerText = "Delete";
+
+    btn.onclick = function() {
+        li.remove();
+    };
+
+    li.appendChild(btn);
+
     document.getElementById("todo").appendChild(li);
 
     input.value = "";
