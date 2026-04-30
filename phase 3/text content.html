@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Learn JS</title>
+    <title>Change Text Dynamicaly</title>
 </head>
 <body>
-    <h1 id="head1">Learn JavaScript</h1>
-    <script>
-        var a=document.getElementById("head1");
-        console.log(a)
-        a.innerHTML="Good morning"
-        
 
-    </script>
+<h2 id="text">Javascript</h2>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText() {
+    document.getElementById("text").innerHTML = "Javascript Tutorial";
+}
+</script>
+
 </body>
 </html>
